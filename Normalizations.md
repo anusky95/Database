@@ -45,5 +45,25 @@ Database Normalization
     - emp_id -> emp_nationality
     - emp_dept -> dept_type,dept_no_emp
  
+ KEYS:
+ Source: https://dba.stackexchange.com/questions/71924/what-is-the-difference-between-primary-key-and-super-key-in-dbms
+ Book (BookID, BookName, Author)
+ 1. Superkey - set which has one or more attributes that are taken collectively and can identify attributes uniquely.Identify each tuple uniquely
+    (BookID), (BookId,Bookname), (BookID, Author), (BookName,Author)
+ 2. Candidate key - minimal super key not having redundant attributes
+    (BookId), (bookname, author)
+ 3. Primary key - Key used uniquely to identify the records. Designer picks the unique keys from candidate key
+    (bookId)
+    
+  ER Diagram rules:
+  * Composite attributes - tree like structure (Name- FN,LN,Mn)
+  * Multivalued attributes - Double ellipse (many phone numbers)
+  * Derived attribute - Dashed ellipse (
+    
+  Participation Constraints
+  * Total Participation − Each entity is involved in the relationship. Total participation is represented by double lines. 
+  * Partial participation − Not all entities are involved in the relationship. Partial participation is represented by single lines.
+
+ 
  
  
